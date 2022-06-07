@@ -1,4 +1,4 @@
-# (Instance Decorators)[https://www.npmjs.com/package/instance-decorators]
+# [Instance Decorators](https://www.npmjs.com/package/instance-decorators)
 Note: The documentation is not written yet so you can read the guide for now.
 ## What does it do?
 This npm library enables users to create decorators that run when the class constructs.
