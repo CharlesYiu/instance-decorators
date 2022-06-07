@@ -1,0 +1,25 @@
+{
+  "name": "instance-decorators",
+  "version": "1.0.4",
+  "description": "this library allows you to create decorators that only run when the class is initialized",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charlesyiu/instance-decorators.git"
+  },
+  "keywords": [
+    "decorator",
+    "class",
+    "instance"
+  ],
+  "author": "Charles Yiu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/charlesyiu/instance-decorators/issues"
+  },
+  "homepage": "https://github.com/charlesyiu/instance-decorators#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.40"
+  }
+}
