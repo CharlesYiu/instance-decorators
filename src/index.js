@@ -1,5 +1,5 @@
 module.exports.Instance = function Instance(target, name, descriptor) {
-    // method decorator or a function as an arguement
+    // method decorator or a function as an argument
     if ((typeof target) !== "undefined") {
         if (((typeof name) !== "undefined") && ((typeof descriptor) === "undefined")) throw Error("this decorator is for methods")
         // get the function from the parameters (if it's used like a decorator in a class then get it from the target and bind )
