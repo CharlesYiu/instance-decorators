@@ -26,8 +26,9 @@ module.exports.Instance = function Instance(target, name, descriptor) {
         if (!isFunction) target[name] = decorator
         return decorator
     }
+
     // class decorator
-    return function(target) {
+    return function(target, name, descriptor) {
         // save a copy of target
         const original = target
         // override constructor
