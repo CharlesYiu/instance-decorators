@@ -3,12 +3,12 @@ This npm library enables users to create decorators that run when the class cons
 ```console
 $ npm install instance-decorators
 ```
-## Pages (or [skip](#some-use-cases-use-case-11-using-it-for-providing-values-to-the-user--22-using-it-for-making-this-readonly--33-using-it-for-processing-values-that-were-set-the-first-time))
-- [Some use cases](#some-use-cases-case-11-using-it-for-providing-values-to-the-user--22-using-it-for-making-this-readonly--33-using-it-for-processing-values-that-were-set-the-first-time)
+## Pages (or [skip](#some-use-cases))
+- [Some use cases](#some-use-cases)
     - [1. Using it for providing values to the user](#1-using-it-for-providing-values-to-the-user)
     - [2. Using it for making 'this' readonly](#2-using-it-for-making-this-readonly)
     - [3. Using it for processing values that were set the first time](#3-using-it-for-processing-values-that-were-set-the-first-time)
-- [Guide](#guide-step-1step-1--2step-2--3step-3--4step-4--5step-5)
+- [Guide](#guide)
     - [Step 1](#step-1)
     - [Step 2](#step-2)
     - [Step 3](#step-3)
@@ -23,7 +23,7 @@ $ npm install instance-decorators
     - [@Instance()](#instance)
     - [Instance(action: InstanceAction): InstanceDecorator](#instanceaction-instanceaction-instancedecorator)
     - [Imports](#imports)
-## Some use cases (use case: [1](#1-using-it-for-providing-values-to-the-user) | [2](#2-using-it-for-making-this-readonly) | [3](#3-using-it-for-processing-values-that-were-set-the-first-time))
+## Some use cases
 There are a huge range of applicable reasons and places where using this library benifits you (and your library/frameworks's users) including..
 ### 1. Using it for providing values to the user
 ```TypeScript
@@ -82,7 +82,7 @@ class Values {
     property: string
 }
 ```
-## Guide (step: [1](#step-1) | [2](#step-2) | [3](#step-3) | [4](#step-4))
+## Guide
 ### Step 1
 To get started you will have to install the npm module:
 ```console
