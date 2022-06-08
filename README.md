@@ -1,4 +1,5 @@
 # Instance Decorators (place: [npm](https://www.npmjs.com/package/instance-decorators) | [git](https://github.com/charlesyiu/instance-decorators))
+argument
 This npm library enables users to create decorators that run when the class constructs.
 ```console
 $ npm install instance-decorators
@@ -93,12 +94,12 @@ and import it into your script:
 const { Instance } = require("instance-decorators")
 ```
 ### Step 2
-You have to first decide what you want your decorator to decorate and depending on your decision you will put 2 or 3 arguements for your function.  
+You have to first decide what you want your decorator to decorate and depending on your decision you will put 2 or 3 arguments for your function.  
 
 2 parameters: (target, name), 3 parameters: (target, name, descriptor)  
 
-Then write your decorators by either giving it as an arguement or using it as a decorator for the method in a class.  
-#### Choice 1: giving it as an arguement
+Then write your decorators by either giving it as an argument or using it as a decorator for the method in a class.  
+#### Choice 1: giving it as an argument
 ```TypeScript
 // this decorator will only work on properties
 const decorator = Instance(function(target, name, descriptor) {
