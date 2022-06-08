@@ -1,17 +1,17 @@
-const { Instance } = require("./src/index")
+const { Instance, InstanceDecorator } = require("./src/index")
 
 // create instance decorators
-const MethodDecorator = Instance(function(target: TestClass, name: string, propertyDescriptor: PropertyDescriptor) {
+const MethodDecorator: typeof InstanceDecorator = Instance(function(target: TestClass, name: string, propertyDescriptor: PropertyDescriptor) {
     console.log(`@MethodDecorator:\nTestClass.constructed: ${target.constructed}\n${name}()'s return value: ${target[name]()}\nproperty descriptor: ${JSON.stringify(propertyDescriptor)}\n\n`)
 })
-const PropertyDecorator = Instance(function(target: TestClass, name: string) {
+const PropertyDecorator: typeof InstanceDecorator = Instance(function(target: TestClass, name: string) {
     console.log(`@PropertyDecorator:\nTestClass.constructed: ${target.constructed}\n${name}: ${target[name]}\n\n`)
 })
 
 class Decorators {
     @Instance
-    static Decorator(target: TestClass, name: string, propertyDescriptor: PropertyDescriptor) {
-        console.log(`@Decorators.Decorator:\nTestClass.constructed: ${target.constructed}\n${name}()'s return value: ${target[name]()}\nproperty descriptor: ${JSON.stringify(propertyDescriptor)}\n\n`)
+    static MethodDecorator(target: TestClass, name: string, propertyDescriptor: PropertyDescriptor) {
+        console.log(`@Decorators.MethodDecorator:\nTestClass.constructed: ${target.constructed}\n${name}()'s return value: ${target[name]()}\nproperty descriptor: ${JSON.stringify(propertyDescriptor)}\n\n`)
     }
 }
 
@@ -28,7 +28,7 @@ class TestClass {
     // tests instance method decorators
     // the value shown in the log statement should be "TestClass.method()'s return value"
     @MethodDecorator
-    @Decorators.Decorator
+    @Decorators.MethodDecorator
     method() {
         return "TestClass.method()'s return value"
     }

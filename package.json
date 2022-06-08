@@ -1,6 +1,6 @@
 {
   "name": "instance-decorators",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "this library allows you to create decorators that only run when the class is initialized",
   "main": "src/index.js",
   "type": "commonjs",
@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/charlesyiu/instance-decorators#readme",
   "devDependencies": {
-    "@types/node": "^17.0.40"
+    "@types/node": "^17.0.41"
   }
 }
